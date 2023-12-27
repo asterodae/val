@@ -1,0 +1,84 @@
+body {
+    background-color: black;
+    font-family:'Times New Roman', Times, serif;
+    color:red;
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+}
+
+.fa-music {
+    font-size: 11px;
+    margin-right: 5px;
+}
+
+@media screen and (max-width: 800px) {
+
+.main {
+position: absolute;
+left:50%;
+top:50%;
+transform:translate(-50%,-50%);
+text-align: center;
+font-size: 18px;
+}
+
+#header {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.ramona {
+display:none;
+}
+}
+
+@media screen and (min-width: 801px) {
+
+
+.main {
+    position: fixed;
+    left:20%;
+    top:50%;
+    transform:translate(-80%,-50%);
+    font-size: 14px;
+    z-index: 999;
+    background-color: black;
+    padding: 5;
+}
+
+#header {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.ramona {
+    position: fixed;
+    text-align: center;
+    right:-10em;
+    top:50%;
+    font-size: 400%;
+    transform:translateY(-50%);
+    line-height:1.33;
+    z-index: 998;
+}
+
+}
+
+a,a:visited {
+    text-decoration: none;
+    color: red;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+.lastfm {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    font-size: 14px;
+    text-transform: lowercase;
+}
